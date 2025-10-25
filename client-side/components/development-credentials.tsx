@@ -8,7 +8,7 @@ export function DevelopmentCredentials() {
   const [isVisible, setIsVisible] = useState(false)
   const [copiedField, setCopiedField] = useState<string | null>(null)
 
-  // Only show in development
+  // Only show in dev
   if (process.env.NODE_ENV === "production") {
     return null
   }
